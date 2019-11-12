@@ -14,3 +14,10 @@
 4. [rozwiązanie](./L2/4.md)
 
 ### Lista 3 do 12-11-2019
+
+
+### Lista 4 do 19-11-2019
+
+1. [rozwiązanie](./L4/1.js)
+2. TODO
+3. [rozwiązanie](./L4/3.js)
