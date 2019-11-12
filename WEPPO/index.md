@@ -15,6 +15,7 @@
 
 ### Lista 3 do 12-11-2019
 
+1. [rozwiązanie](./L3/1.js)
 
 ### Lista 4 do 19-11-2019
 
