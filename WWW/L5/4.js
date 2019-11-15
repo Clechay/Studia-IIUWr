@@ -30,15 +30,19 @@ const points = [];
 let gamePoint = null;
 
 
-function chaos() {
-	const newPoint = halfWay( randomMember(points), gamePoint );
+ctx.fillStyle = 'hsla(0.666, 100%, 50%, 0.2)';
 
-	ctx.globalAlpha = 0.2;
-	ctx.beginPath();
-	ctx.fillStyle = `hsl(0.666, 100%, 50%)`;
-	ctx.arc(newPoint.x, newPoint.y, (Math.random()*5), 0, 2 * Math.PI);
-	ctx.closePath();
-	ctx.fill();
+function chaos() {
+	let newPoint;
+
+	for (let i = 0; i < 50; i++) {
+		newPoint = halfWay( randomMember(points), gamePoint );
+		ctx.beginPath();
+		ctx.arc(newPoint.x, newPoint.y, 0.4, 0, 2 * Math.PI);
+		ctx.closePath();
+		ctx.fill();
+			
+	}
 
 	gamePoint = newPoint;
 	window.requestAnimationFrame(chaos);
