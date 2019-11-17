@@ -1,0 +1,2 @@
+#!/usr/bin/env zsh
+sudo chmod -R 777 rawfiles
