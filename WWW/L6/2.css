@@ -1,0 +1,27 @@
+img{
+	width: 20rem;
+	height: auto;
+	border: solid 1px black;
+}
+img.selected{
+	border-color: crimson;
+	filter: blur(4px);
+}
+#gallery{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+html,body{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*{
+	box-sizing: border-box;
+}
