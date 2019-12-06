@@ -7,8 +7,10 @@ $(document).ready(function(){
 		$("img.selected").removeClass('selected')
 	})
 	$('#log').click(function(){
+		const logs = [];
 		$("img.selected").each(function(){
-			console.log(this.id);
+			logs.push(this.id);
 		})
+		$("#logi").val(logs.join('\n'));
 	})
 })
