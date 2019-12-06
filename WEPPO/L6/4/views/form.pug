@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body
+    if err
+      h3=err
+    form(action="/print", method="get")
+      input(type="text", name="name", placeholder="Jan Nowak", value=name)
+      input(type="text", name="sub", placeholder="WEPPO", value=sub)
+      input(type="number", name="task1", placeholder="1", value=task1)
+      input(type="number", name="task2", placeholder="2", value=task2)
+      input(type="number", name="task3", placeholder="3", value=task3)
+      input(type="number", name="task4", placeholder="4", value=task4)
+      input(type="number", name="task5", placeholder="5", value=task5)
+      input(type="number", name="task6", placeholder="6", value=task6)
+      input(type="number", name="task7", placeholder="7", value=task7)
+      input(type="number", name="task8", placeholder="8", value=task8)
+      input(type="number", name="task9", placeholder="9", value=task9)
+      input(type="number", name="task0", placeholder="0", value=task0)
+      button(type="submit") send
