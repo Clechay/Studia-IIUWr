@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@koa/router": "^8.0.5",
+    "fs-extra": "^8.1.0",
+    "koa": "^2.11.0",
+    "koa-static": "^5.0.0"
+  }
+}
