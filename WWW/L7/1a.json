@@ -1,0 +1,11 @@
+{
+	"name": "Janusz Ex",
+   "email": "ser@example.com",
+   "amount": "11,11PLN",
+   "phone": "+48123123123",
+   "card": {
+		"number": "1111-2222-3333-4444",
+		"cvv": "123",
+		"exp": "11/11"
+	}
+}

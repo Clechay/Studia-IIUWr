@@ -1,0 +1,25 @@
+.sidebar>*{
+	margin-top: 1rem;
+}
+.sidebar>*:last-child{
+	margin-bottom: 1rem;
+}
+
+.mainbar>*{
+	margin-top: 1rem;
+}
+.mainbar>*:last-child{
+	margin-bottom: 1rem;
+}
+.mainbar>.card{
+	width: 100%;
+}
+.wrapper{
+	display: flex; 
+	flex-direction: row; 
+}
+@media(max-width: 992px) {
+	.wrapper{
+		flex-wrap: wrap;
+	}
+}

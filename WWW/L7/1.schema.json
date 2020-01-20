@@ -1,0 +1,98 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://example.com/root.json",
+	"type": "object",
+	"title": "The Root Schema",
+	"required": [
+	  "card",
+	  "name",
+	  "email",
+	  "phone",
+	  "amount"
+	],
+	"properties": {
+	  "card": {
+		 "$id": "#/properties/card",
+		 "type": "object",
+		 "title": "The Card Schema",
+		 "required": [
+			"number",
+			"exp",
+			"cvv"
+		 ],
+		 "properties": {
+			"number": {
+			  "$id": "#/properties/card/properties/number",
+			  "type": "string",
+			  "title": "The Number Schema",
+			  "default": "",
+			  "examples": [
+				 "2612936219"
+			  ],
+			  "pattern": "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d$"
+			},
+			"exp": {
+			  "$id": "#/properties/card/properties/exp",
+			  "type": "string",
+			  "title": "The Exp Schema",
+			  "default": "",
+			  "examples": [
+				 "16/17"
+			  ],
+			  "pattern": "^\\d\\d\\/\\d\\d$"
+			},
+			"cvv": {
+			  "$id": "#/properties/card/properties/cvv",
+			  "type": "string",
+			  "title": "The Cvv Schema",
+			  "default": "",
+			  "examples": [
+				 "123"
+			  ],
+			  "pattern": "^\\d\\d\\d$"
+			}
+		 }
+	  },
+	  "name": {
+		 "$id": "#/properties/name",
+		 "type": "string",
+		 "title": "The Name Schema",
+		 "default": "",
+		 "examples": [
+			"Marcin Marcinkowski"
+		 ],
+		 "pattern": "^[A-Z][a-z]+ [A-Z][a-z]+$"
+	  },
+	  "email": {
+		 "$id": "#/properties/email",
+		 "type": "string",
+		 "title": "The Email Schema",
+		 "default": "",
+		 "examples": [
+			"marcin.marcinkowski@example.com"
+		 ],
+		 "pattern": "^[a-z]+\\@[a-z]+\\.[a-z]+$"
+	  },
+	  "phone": {
+		 "$id": "#/properties/phone",
+		 "type": "string",
+		 "title": "The Phone Schema",
+		 "default": "",
+		 "examples": [
+			"+48000000000"
+		 ],
+		 "pattern": "^\\+48\\d{9}$"
+	  },
+	  "amount": {
+		 "$id": "#/properties/amount",
+		 "type": "string",
+		 "title": "The Amount Schema",
+		 "default": "",
+		 "examples": [
+			"11,74PLN"
+		 ],
+		 "pattern": "^\\d+\\,\\d+PLN$"
+	  }
+	}
+ }

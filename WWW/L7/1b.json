@@ -1,0 +1,11 @@
+{
+	"name": "Random Scamer",
+   "email": "ceo@example.com",
+   "amount": "11111,11PLN",
+   "phone": "+48123453123",
+   "card": {
+		"number": "1232-6634-6436-1121",
+		"cvv": "543",
+		"exp": "30/10"
+	}
+}
